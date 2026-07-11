@@ -1,24 +1,9 @@
-name: 버그 보고
+name: bug
 description: 오류 및 예상과 다른 동작을 등록합니다.
 title: "[FIX] "
 labels:
   - bug
 body:
-  - type: dropdown
-    id: area
-    attributes:
-      label: 발생 영역
-      options:
-        - Device
-        - AI
-        - Backend
-        - Frontend
-        - Database
-        - Mobius
-        - Common
-    validations:
-      required: true
-
   - type: textarea
     id: problem
     attributes:
