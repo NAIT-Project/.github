@@ -1,0 +1,45 @@
+name: 일반 작업
+description: 프로젝트 설정, 조사, 문서, 운영 작업을 등록합니다.
+title: "[TASK] "
+labels:
+  - chore
+body:
+  - type: dropdown
+    id: branch_type
+    attributes:
+      label: Branch 타입
+      options:
+        - chore
+        - docs
+        - refactor
+        - test
+        - ci
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 작업 요약
+      description: 작업 목적과 필요한 이유를 작성해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 작업 항목
+      value: |
+        - [ ] 작업 내용 1
+        - [ ] 작업 내용 2
+        - [ ] 확인 및 문서화
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 완료 조건
+      description: 작업 완료를 판단할 수 있는 기준을 작성해주세요.
+    validations:
+      required: true
