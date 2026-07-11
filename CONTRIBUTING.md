@@ -558,7 +558,6 @@ git push -u origin feat/12-face-analyzer
 
 ## 17. 전체 요약
 
-작업할 때 이것만 기억하면 됩니다.
 
 ```text
 1. Issue를 만든다.
