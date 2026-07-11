@@ -1,21 +1,9 @@
-name: 일반 작업
+name: chore
 description: 프로젝트 설정, 조사, 문서, 운영 작업을 등록합니다.
-title: "[TASK] "
+title: "[chore] "
 labels:
   - chore
 body:
-  - type: dropdown
-    id: branch_type
-    attributes:
-      label: Branch 타입
-      options:
-        - chore
-        - docs
-        - refactor
-        - test
-        - ci
-    validations:
-      required: true
 
   - type: textarea
     id: summary
