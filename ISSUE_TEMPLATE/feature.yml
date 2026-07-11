@@ -1,33 +1,16 @@
-name: 기능 개발
+name: feature
 description: 새로운 기능 구현 작업을 등록합니다.
 title: "[FEAT] "
 labels:
   - feature
 body:
-  - type: dropdown
-    id: area
-    attributes:
-      label: 작업 영역
-      description: 이 기능이 속한 영역을 선택해주세요.
-      options:
-        - Device
-        - AI
-        - Backend
-        - Frontend
-        - Database
-        - Mobius
-        - Common
-    validations:
-      required: true
-
   - type: textarea
     id: description
     attributes:
       label: 기능 설명
       description: 구현할 기능과 필요한 이유를 작성해주세요.
       placeholder: |
-        MediaPipe blendshape 값을 받아서
-        smile_intensity, blink_intensity 등의 표정 지표로 변환합니다.
+        구현할 기능을 구체적으로 작성해주세요.
     validations:
       required: true
 
@@ -50,8 +33,7 @@ body:
       label: 완료 조건
       description: 어떤 상태가 되면 작업을 완료한 것으로 볼지 작성해주세요.
       placeholder: |
-        face_analyzer 실행 시 facial_features 형식의 dict가 반환됩니다.
-        얼굴이 없는 경우에도 프로그램이 종료되지 않습니다.
+        완료 조건을 작성해주세요.
     validations:
       required: true
 
